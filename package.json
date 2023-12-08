@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "license": "MIT",
   "scripts": {
-    "start": "ng serve",
+    "start": "nx serve",
+    "build": "ng build",
     "test": "nx test"
   },
   "private": true,
