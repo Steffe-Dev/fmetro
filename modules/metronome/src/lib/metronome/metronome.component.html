@@ -1,0 +1,36 @@
+<div class="width-100 min-h-full bg-white">
+  <div class="flex flex-row">
+    <div class="items-center mx-auto py-5">
+      <h1 class="text-3xl font-light select-none">Metronome</h1>
+    </div>
+  </div>
+  <div class="flex flex-row flex-wrap h-16">
+    <div class="basis-1/2 sm:basis-1/3 flex items-center h-full">
+      <fmetro-number-picker
+        [value]="beats"
+        [componentDisabled]="isClicking"
+        (change)="updateBeats($event)"
+        class="mx-auto sm:ms-auto sm:me-0 h-full w-4/5 sm:w-1/3"
+      ></fmetro-number-picker>
+    </div>
+    <div
+      class="basis-full order-first sm:order-none sm:basis-1/3 flex items-center h-full mb-3 sm:mb-0"
+    >
+      <fmetro-number-picker
+        [value]="bpm"
+        [componentDisabled]="isClicking"
+        (change)="updateBpm($event)"
+        class="mx-auto h-full block w-1/2"
+      ></fmetro-number-picker>
+    </div>
+    <div class="basis-1/2 sm:basis-1/3 flex items-center h-full">
+      <fmetro-number-picker
+        [value]="divisions"
+        [componentDisabled]="isClicking"
+        (change)="updateDivisions($event)"
+        (action)="toggleMetronome()"
+        class="mx-auto sm:me-auto sm:ms-0 h-full w-4/5 sm:w-1/3"
+      ></fmetro-number-picker>
+    </div>
+  </div>
+</div>

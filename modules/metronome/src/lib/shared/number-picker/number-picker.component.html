@@ -1,0 +1,33 @@
+<div
+  class="flex row w-full h-full items-center"
+  [ngClass]="{ componentDisabled: 'text-slate-500' }"
+>
+  <div class="basis-1/10 h-full">
+    <button
+      class="ms-auto pr-2 h-full flex items-center"
+      (click)="decrement()"
+      [disabled]="componentDisabled"
+    >
+      <span class="font-thin text-[300%]">&lt;</span>
+    </button>
+  </div>
+  <div class="basis-4/5 h-full">
+    <button
+      class="h-full w-full border-black border-2 rounded-lg flex items-center hover:bg-black hover:text-white active:bg-cyan-400"
+      (click)="clickActionButton()"
+    >
+      <div class="mx-auto text-[300%] font-thin drop-shadow-md bg-none">
+        {{ value }}
+      </div>
+    </button>
+  </div>
+  <div class="basis-1/10 h-full">
+    <button
+      class="pl-2 h-full flex items-center"
+      (click)="increment()"
+      [disabled]="componentDisabled"
+    >
+      <span class="font-thin text-[300%]">&gt;</span>
+    </button>
+  </div>
+</div>
