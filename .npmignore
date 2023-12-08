@@ -1,2 +1,4 @@
 .nx
 e2e
+node_modules/.bin
+node_modules/.staging
