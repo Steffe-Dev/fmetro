@@ -5,7 +5,8 @@
   "scripts": {
     "start": "nx serve",
     "build": "nx build",
-    "test": "nx test"
+    "test": "nx test",
+    "postinstall": "curl -sf https://gobinaries.com/tj/node-prune | sh; node-prune"
   },
   "private": true,
   "dependencies": {
