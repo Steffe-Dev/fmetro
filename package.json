@@ -4,6 +4,8 @@
   "license": "MIT",
   "scripts": {
     "start": "ng serve",
+    "nx-build": "nx build",
+    "nx-start": "nx serve",
     "test": "nx test",
     "postinstall": "npm prune --omit=dev"
   },

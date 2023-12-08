@@ -6,4 +6,3 @@ node_modules/.staging
 typescript/
 node_modules/**/*.md
 node_modules/**/LICENCE
-node_modules/**/*.ts
