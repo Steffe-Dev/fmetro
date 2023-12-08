@@ -3,8 +3,7 @@
   "version": "0.0.1",
   "license": "MIT",
   "scripts": {
-    "start": "nx serve",
-    "build": "nx build",
+    "start": "ng serve",
     "test": "nx test",
     "postinstall": "npm prune --omit=dev"
   },
@@ -19,7 +18,6 @@
     "@angular/platform-browser-dynamic": "~17.0.0",
     "@angular/platform-server": "~17.0.0",
     "@angular/router": "~17.0.0",
-    "@nx/angular": "17.1.3",
     "@types/howler": "^2.2.11",
     "express": "~4.18.2",
     "howler": "^2.2.4",
@@ -38,6 +36,7 @@
     "@angular/compiler-cli": "~17.0.0",
     "@angular/language-service": "~17.0.0",
     "@fireflysemantics/join": "^1.0.14",
+    "@nx/angular": "17.1.3",
     "@nx/devkit": "17.1.3",
     "@nx/eslint": "17.1.3",
     "@nx/eslint-plugin": "17.1.3",
