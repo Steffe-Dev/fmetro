@@ -6,7 +6,7 @@
     "start": "nx serve",
     "build": "nx build",
     "test": "nx test",
-    "postinstall": "curl -sf https://gobinaries.com/github.com/tj/node-prune@v1.2.0 | PREFIX=. sh; node-prune"
+    "postinstall": "npm prune --production"
   },
   "private": true,
   "dependencies": {
