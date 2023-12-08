@@ -6,7 +6,7 @@
     "start": "nx serve",
     "build": "nx build",
     "test": "nx test",
-    "postinstall": "npm prune --production"
+    "postinstall": "npm prune --omit=dev"
   },
   "private": true,
   "dependencies": {
@@ -19,7 +19,6 @@
     "@angular/platform-browser-dynamic": "~17.0.0",
     "@angular/platform-server": "~17.0.0",
     "@angular/router": "~17.0.0",
-    "@angular/ssr": "~17.0.0",
     "@nx/angular": "17.1.3",
     "@types/howler": "^2.2.11",
     "express": "~4.18.2",
